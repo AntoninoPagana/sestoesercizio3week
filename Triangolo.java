@@ -1,10 +1,12 @@
 public class Triangolo extends Forma {
     private int base;
     private int altezza;
-    public Triangolo(int base, int altezza){
+    TipoForma tipo;
+    public Triangolo(int base, int altezza, TipoForma tipo){
         super(TipoForma.TRIANGOLO);
         this.base = base;
         this.altezza = altezza;
+        this.tipo = tipo;
     }
     public int getBase() {
         return base;
